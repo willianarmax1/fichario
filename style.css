@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .square {
+    width: 800px;
+    height: 400px;
+    background-color: yellow;
+    position: center;
+    bottom: 0;
+    left: 50%;
+    border: 1px solid#000;
+  }
+  
+  .fichario {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: -41px; /* Posição acima do retângulo amarelo */
+    left: calc(1% - 150px); /* Ajuste para centralizar o primeiro fichario */
+    border: 1px solid#000;
+    background-color: yellow;
+
+  }
+  
+  .fichario:nth-child(1) {
+    left: calc(0%);
+  }
+  
+  .fichario:nth-child(2) {
+    left: calc(0% + 154px);
+  }
+  
+  .fichario:nth-child(3) {
+    left: calc(35% + 27px);
+  }
